@@ -6,6 +6,3 @@ cmds = ["pnpm install --frozen-lockfile --config.dangerously-allow-all-builds=tr
 
 [phases.build]
 cmds = ["pnpm run build"]
-
-[options]
-publish = "build"
