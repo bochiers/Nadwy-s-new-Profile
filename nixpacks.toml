@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["nodejs_22", "pnpm-9"]
+
+[phases.install]
+cmds = ["pnpm install --frozen-lockfile --config.dangerously-allow-all-builds=true"]
+
+[phases.build]
+cmds = ["pnpm run build"]
+
+[options]
+publish = "build"
