@@ -33,6 +33,6 @@ coverage
 legacy
 
 # docker artifacts (never copy into the image)
-Dockerfile*
+Dockerfile.bak
 docker-compose*.yml
 .dockerignore

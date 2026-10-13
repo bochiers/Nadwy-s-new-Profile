@@ -1,0 +1,9 @@
+# Work Log
+
+---
+
+## 2026-10-14 — Add Dockerfile
+
+**Task:** Buat Dockerfile untuk project portfolio tanpa menjalankan Docker lokal
+**Files:** Dockerfile, .dockerignore, progress.txt
+**Result:** Added multi-stage Node build + Nginx static runtime; Docker tidak dijalankan.
