@@ -10,21 +10,21 @@ WORKDIR /app
 RUN corepack enable
 
 COPY package.json pnpm-lock.yaml ./
-
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
     pnpm install --frozen-lockfile --prefer-offline --config.dangerously-allow-all-builds=true
 
 COPY . .
 RUN pnpm run build
 
-FROM nginx:1.27-alpine AS runtime
+FROM node:22-alpine AS runtime
 
-COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/build /usr/share/nginx/html
+ENV NODE_ENV=production
 
-EXPOSE 80
+WORKDIR /app
 
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD wget -qO- http://127.0.0.1/ >/dev/null 2>&1 || exit 1
+COPY --from=build /app/build ./build
+RUN npm install -g sirv-cli
 
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 3000
+
+CMD ["sirv", "build", "--host", "0.0.0.0", "--port", "3000", "--single"]
