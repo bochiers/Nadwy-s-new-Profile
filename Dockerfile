@@ -25,6 +25,6 @@ WORKDIR /app
 COPY --from=build /app/build ./build
 RUN npm install -g sirv-cli
 
-EXPOSE 8080
+EXPOSE 8787
 
-CMD ["sirv", "build", "--host", "0.0.0.0", "--port", "8080", "--single"]
+CMD ["sirv", "build", "--host", "0.0.0.0", "--port", "8787", "--single"]
