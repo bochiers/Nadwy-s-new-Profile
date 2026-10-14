@@ -44,15 +44,16 @@
         <div class="mt-8 space-y-8">
           <article class="border-l border-white/15 pl-6">
             <span class="font-display text-sm tracking-wide text-blood-soft">Present</span>
-            <h4 class="mt-1 text-lg text-bone">Chief Technology Officer</h4>
+            <h4 class="mt-1 text-lg text-bone">Project Manager</h4>
             <p class="mt-2 text-sm leading-6 text-ash">
-              Leading R&D, exploring new technologies and overseeing prototypes and
-              proof-of-concept projects.
+              Leading cross-functional teams across infrastructure, network, DevOps and
+              cybersecurity — from software system analysis and DMS integration to end-to-end
+              delivery.
             </p>
           </article>
           <article class="border-l border-white/15 pl-6">
             <span class="font-display text-sm tracking-wide text-blood-soft">—</span>
-            <h4 class="mt-1 text-lg text-bone">Network Engineer</h4>
+            <h4 class="mt-1 text-lg text-bone">IT Infrastructure &amp; Network Engineer</h4>
             <p class="mt-2 text-sm leading-6 text-ash">
               Ensuring the stability, security and efficiency of network systems across IT
               infrastructure.

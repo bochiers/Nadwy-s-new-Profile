@@ -29,7 +29,7 @@ export type Chapter = {
   role: string;
   image: string;
   story: string[];
-  filter: 'app' | 'web' | 'card';
+  filter: 'infra' | 'security' | 'advisory';
   categoryLabel: string;
   subtitle: string;
   images: string[];
@@ -41,22 +41,23 @@ export const profile: Profile = {
   firstName: 'Nadwy',
   tagline: 'Technology Enthusiast',
   location: 'Jakarta',
-  role: 'Chief Technology Officer',
+  role: 'Project Manager',
   introLine:
-    'Leading research and development efforts to drive innovation — exploring new technologies and turning ideas into prototypes and proof-of-concept projects.',
+    'Leading technology delivery across infrastructure, network, DevOps and cybersecurity — turning complex requirements into reliable, secure and scalable systems.',
   aboutIntro:
-    'Leading research and development efforts to drive innovation. This may involve exploring new technologies, assessing their applicability to the business, and overseeing the development of prototypes or proof-of-concept projects',
+    'A results-driven Project Manager with 15 years of hands-on experience across IT infrastructure, network engineering, DevOps and cybersecurity. I lead cross-functional teams to transform complex technical requirements into systems that are on time, on budget and built to last.',
   aboutBody:
-    'A dedicated and highly skilled Network Engineer with a strong background in IT infrastructure. Committed to ensuring the stability, security, and efficiency of network systems. Seeking opportunities to contribute technical expertise in a challenging and dynamic environment',
+    'My strength is bridging strategic project outcomes with deep technical execution — from software system analysis and Document Management System (DMS) integration to full IT project delivery. I bring structure to ambiguous problems and make sure the technology actually works in the real world.',
   detailsLeft: [
-    { label: 'Birthday', value: '7 December 1988' },
-    { label: 'Website', value: 'www.nawasena.net' },
-    { label: 'Phone', value: '+6282111627976' },
-    { label: 'City', value: 'Jakarta, Indonesia' }
+    { label: 'Role', value: 'IT Project Manager' },
+    { label: 'Experience', value: '15 Years' },
+    { label: 'Expertise', value: 'Infra · Network · Security' },
+    { label: 'Focus', value: 'Delivery & Integration' }
   ],
   detailsRight: [
-    { label: 'Age', value: '35' },
-    { label: 'Degree', value: 'Bachelor' },
+    { label: 'Location', value: 'Jakarta, Indonesia' },
+    { label: 'Certification', value: 'CCNA · ACMP · VSE+' },
+    { label: 'Website', value: 'www.nawasena.net' },
     { label: 'Mail', value: 'nadwy@nawasena.net' }
   ],
   socials: [
@@ -85,21 +86,23 @@ export const profile: Profile = {
 
 /** Big-number stats block — the "Goonies Never Say Die" credits grid. */
 export const stats: Stat[] = [
-  { value: 'CTO', label: 'Current role' },
+  { value: 'PM', label: 'Current role' },
   { value: '15+', label: 'Years in IT' },
-  { value: 'Network', label: 'Engineer background' },
+  { value: 'Infra', label: '& Security background' },
   { value: 'Bachelor', label: 'Degree' },
   { value: '4', label: 'Certifications' },
   { value: 'Jakarta', label: 'Based in' }
 ];
 
 export const skills = [
+  { label: 'IT Project Management', value: 95 },
   { label: 'Networking', value: 100 },
   { label: 'Server Engineer', value: 90 },
   { label: 'Virtualization', value: 98 },
-  { label: 'PHP', value: 80 },
-  { label: 'HTML', value: 90 },
-  { label: 'CSS', value: 75 }
+  { label: 'DevOps', value: 88 },
+  { label: 'Cybersecurity', value: 90 },
+  { label: 'Software System Analysis', value: 85 },
+  { label: 'DMS Integration', value: 85 }
 ] as const;
 
 export const certifications = [
@@ -117,14 +120,14 @@ export const portfolio: Chapter[] = [
   {
     slug: 'test-and-comm-network-devices',
     name: 'Test and Comm Network Devices',
-    role: 'Infra Structure',
+    role: 'Infrastructure',
     image: '/assets/img/Porto/Cyber%20Defense%20Kemhan/Test%20Com%20Network.jpg',
     story: [
       'Testing and commissioning of network devices for the Cyber Defence program at Kemhan — validating connectivity, performance and hardening across the deployed infrastructure.',
       'Ensuring the network is stable, secure and ready to operate in a demanding defence environment.'
     ],
-    filter: 'app',
-    categoryLabel: 'Infra Structure',
+    filter: 'infra',
+    categoryLabel: 'Infrastructure',
     subtitle: 'Cyber Defence Kemhan',
     images: [
       '/assets/img/Porto/Cyber%20Defense%20Kemhan/Test%20Com%20Network.jpg',
@@ -135,14 +138,14 @@ export const portfolio: Chapter[] = [
   {
     slug: 'kick-of-meeting-secure-communication-platform',
     name: 'Kick Off Meeting Secure Communication Platform',
-    role: 'Web',
+    role: 'Security & Communication',
     image: '/assets/img/Porto/SIT%20AL/technical%20meeting%20AL.jpg',
     story: [
       'Kick-off meeting for the Secure Communication Platform — aligning technical scope, milestones and deliverables with stakeholders before implementation begins.',
       'A foundation-setting discussion that shapes how the platform is built, secured and rolled out.'
     ],
-    filter: 'web',
-    categoryLabel: 'Web',
+    filter: 'security',
+    categoryLabel: 'Security & Communication',
     subtitle: 'Secure Communication Platform',
     images: [
       '/assets/img/Porto/SIT%20AL/technical%20meeting%20AL.jpg',
@@ -153,14 +156,14 @@ export const portfolio: Chapter[] = [
   {
     slug: 'pusrehab-bintaro',
     name: 'Pusrehab Bintaro',
-    role: 'Infra Structure',
+    role: 'Infrastructure',
     image: '/assets/img/Porto/Cyber%20Defense%20Kemhan/Pusrehab%20Bintaro.jpg',
     story: [
       'Uji Kelaikan (fitness-for-purpose assessment) for the network infrastructure at Pusrehab Bintaro — verifying that systems meet the required operational standards.',
       'Delivering a clear assessment so the infrastructure is fit to operate and easy to maintain.'
     ],
-    filter: 'app',
-    categoryLabel: 'Infra Structure',
+    filter: 'infra',
+    categoryLabel: 'Infrastructure',
     subtitle: 'Uji Kelaikan Kemhan',
     images: [
       '/assets/img/Porto/Cyber%20Defense%20Kemhan/Pusrehab%20Bintaro.jpg',
@@ -171,14 +174,14 @@ export const portfolio: Chapter[] = [
   {
     slug: 'presentation-iccs-ranpur',
     name: 'Presentation ICCS RANPUR',
-    role: 'Card',
+    role: 'Advisory',
     image: '/assets/img/Porto/ICCS%20Ranpur/Iccs%20Presentation.jpg',
     story: [
       'Presenting the Integrated Combat & Communication System (ICCS) for RANPUR — walking stakeholders through capabilities, integration and the value it brings to the field.',
       'Turning complex systems into a clear, convincing narrative.'
     ],
-    filter: 'card',
-    categoryLabel: 'Card',
+    filter: 'advisory',
+    categoryLabel: 'Advisory',
     subtitle: 'ICCS Ranpur',
     images: [
       '/assets/img/Porto/ICCS%20Ranpur/Iccs%20Presentation.jpg',
@@ -189,14 +192,14 @@ export const portfolio: Chapter[] = [
   {
     slug: 'neptunus-vid-tron',
     name: 'Neptunus Vid-Tron',
-    role: 'Web',
+    role: 'Security & Communication',
     image: '/assets/img/Porto/SIT%20AL/Neputunus%20Vid%20Tron.jpg',
     story: [
       'Neptunus Vid-Tron — a video and data presentation platform built for secure, high-impact communication.',
       'Bridging display, data and network into one cohesive solution.'
     ],
-    filter: 'web',
-    categoryLabel: 'Web',
+    filter: 'security',
+    categoryLabel: 'Security & Communication',
     subtitle: 'SIT AL',
     images: [
       '/assets/img/Porto/SIT%20AL/Neputunus%20Vid%20Tron.jpg',
@@ -207,14 +210,14 @@ export const portfolio: Chapter[] = [
   {
     slug: 'pelatihan-scp',
     name: 'Pelatihan SCP',
-    role: 'Infra Structure',
+    role: 'Security & Communication',
     image: '/assets/img/Porto/SIT%20AL/SIT%20AL.jpg',
     story: [
       'Training sessions for the Secure Communication Platform (SCP) — enabling teams to operate the system confidently and securely.',
       'Knowledge transfer that makes the technology stick.'
     ],
-    filter: 'app',
-    categoryLabel: 'Infra Structure',
+    filter: 'security',
+    categoryLabel: 'Security & Communication',
     subtitle: 'SCP — Secure Communication Platform',
     images: [
       '/assets/img/Porto/SIT%20AL/SIT%20AL.jpg',
@@ -225,14 +228,14 @@ export const portfolio: Chapter[] = [
   {
     slug: 'product-knowledge',
     name: 'Product Knowledge',
-    role: 'Card',
+    role: 'Advisory',
     image: '/assets/img/Porto/ICCS%20Ranpur/Product%20Knowledge.jpg',
     story: [
       'Product knowledge sessions on Military Radio Communication — deep dives into capabilities, configurations and real-world usage.',
       'Sharing the detail that turns a product into a solution.'
     ],
-    filter: 'card',
-    categoryLabel: 'Card',
+    filter: 'advisory',
+    categoryLabel: 'Advisory',
     subtitle: 'Military Radio Communication',
     images: [
       '/assets/img/Porto/ICCS%20Ranpur/Product%20Knowledge.jpg',
@@ -243,14 +246,14 @@ export const portfolio: Chapter[] = [
   {
     slug: 'presentation-network-stan-bintaro',
     name: 'Presentation Network STAN Bintaro',
-    role: 'Card',
+    role: 'Infrastructure',
     image: '/assets/img/Porto/STAN%20BINTARO/Presentation%20Network%20STAN%20BINTARO.jpg',
     story: [
       'Presenting the network design and architecture for STAN Bintaro — translating technical requirements into a clear, buildable plan.',
       'Designing infrastructure that is reliable, scalable and secure.'
     ],
-    filter: 'card',
-    categoryLabel: 'Card',
+    filter: 'infra',
+    categoryLabel: 'Infrastructure',
     subtitle: 'STAN Bintaro',
     images: [
       '/assets/img/Porto/STAN%20BINTARO/Presentation%20Network%20STAN%20BINTARO.jpg'
@@ -259,14 +262,14 @@ export const portfolio: Chapter[] = [
   {
     slug: 'implementasi-video-tron-kasops-kasal',
     name: 'Implementasi Video-Tron',
-    role: 'Web',
+    role: 'Security & Communication',
     image: '/assets/img/Porto/SIT%20AL/Video%20Trion%20Kasal.jpg',
     story: [
       'Implementasi Video-Tron for Kasops Kasal — deploying the video presentation system end to end.',
       'From planning to on-site delivery, making sure it works when it matters.'
     ],
-    filter: 'web',
-    categoryLabel: 'Web',
+    filter: 'security',
+    categoryLabel: 'Security & Communication',
     subtitle: 'Kasops Kasal',
     images: [
       '/assets/img/Porto/SIT%20AL/Video%20Trion%20Kasal.jpg',
@@ -295,7 +298,7 @@ export const gallery: string[] = [
 /** Filter categories used on the portfolio/chapters section. */
 export const filters = [
   { key: 'all' as const, label: 'All' },
-  { key: 'app' as const, label: 'Infra Structure' },
-  { key: 'card' as const, label: 'Card' },
-  { key: 'web' as const, label: 'Web' }
+  { key: 'infra' as const, label: 'Infrastructure' },
+  { key: 'security' as const, label: 'Security & Communication' },
+  { key: 'advisory' as const, label: 'Advisory' }
 ];

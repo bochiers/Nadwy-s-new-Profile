@@ -2,7 +2,7 @@
   import { reveal } from '$lib/actions/reveal';
   import { filters, portfolio } from '$lib/data';
 
-  let active: 'all' | 'app' | 'card' | 'web' = 'all';
+  let active: 'all' | 'infra' | 'security' | 'advisory' = 'all';
   $: shown = active === 'all' ? portfolio : portfolio.filter((p) => p.filter === active);
 </script>
 
