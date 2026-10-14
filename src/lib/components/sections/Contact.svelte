@@ -13,7 +13,14 @@
     const subject = String(data.get('subject') ?? '').trim();
     const message = String(data.get('message') ?? '').trim();
 
-    const body = [`Name: ${name}`, `Email: ${email}`, '', message].join('\n');
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      '',
+      message,
+      '',
+      '— sent via nawasena.net'
+    ].join('\n');
     const to = 'nadwy@nawasena.net';
     window.location.href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(
       subject
@@ -29,6 +36,11 @@
 
     <div class="mt-16 grid gap-12 md:grid-cols-[1fr_1.2fr] md:gap-20">
       <div class="space-y-8" data-reveal use:reveal>
+        <p class="max-w-md text-base leading-7 text-bone/80">
+          Have a project, a role, or a problem worth solving? Drop me a message — I usually reply
+          within a day.
+        </p>
+
         <div>
           <h3 class="text-xs uppercase tracking-[0.4em] text-blood-soft">Social</h3>
           <div class="mt-4 flex flex-wrap gap-3">
@@ -46,8 +58,9 @@
         <div>
           <h3 class="text-xs uppercase tracking-[0.4em] text-blood-soft">Email</h3>
           <p class="mt-3 text-sm leading-7 text-bone/85">
-            <a class="transition hover:text-blood-soft" href="mailto:nadwy.anshary@gmail.com">nadwy.anshary@gmail.com</a><br />
-            <a class="transition hover:text-blood-soft" href="mailto:nadwy@nawasena.net">nadwy@nawasena.net</a>
+            <a class="transition hover:text-blood-soft" href="mailto:nadwy@nawasena.net"
+              >nadwy@nawasena.net</a
+            >
           </p>
         </div>
 
@@ -56,6 +69,11 @@
           <p class="mt-3 text-sm text-bone/85">
             <a class="transition hover:text-blood-soft" href="tel:+6282111627976">+62 8211 1627 976</a>
           </p>
+        </div>
+
+        <div>
+          <h3 class="text-xs uppercase tracking-[0.4em] text-blood-soft">Based in</h3>
+          <p class="mt-3 text-sm text-bone/85">{profile.location}, Indonesia</p>
         </div>
       </div>
 
@@ -109,12 +127,19 @@
         </label>
 
         <div class="mt-6 flex flex-wrap items-center justify-between gap-3">
-          <p class="text-xs text-ash/70">Submitting opens your email app.</p>
+          <p class="text-xs text-ash/70">Opens your email app — no data stored.</p>
           <button
             type="submit"
-            class="inline-flex items-center justify-center rounded-full bg-bone px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-ink transition hover:bg-blood-soft hover:text-white"
+            class="group inline-flex items-center justify-center gap-2 rounded-full bg-bone px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-ink transition hover:bg-blood-soft hover:text-white"
           >
             Send
+            <svg
+              viewBox="0 0 24 24"
+              class="h-4 w-4 text-ink transition-transform group-hover:translate-x-0.5 group-hover:text-white"
+              aria-hidden="true"
+            >
+              <path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" />
+            </svg>
           </button>
         </div>
       </form>

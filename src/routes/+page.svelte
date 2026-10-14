@@ -2,6 +2,8 @@
   import { onMount } from 'svelte';
   import LoadingOverlay from '$lib/components/LoadingOverlay.svelte';
   import PulseNav from '$lib/components/PulseNav.svelte';
+  import ScrollProgress from '$lib/components/ScrollProgress.svelte';
+  import Cursor from '$lib/components/Cursor.svelte';
   import Hero from '$lib/components/sections/Hero.svelte';
   import Story from '$lib/components/sections/Story.svelte';
   import Chapters from '$lib/components/sections/Chapters.svelte';
@@ -46,6 +48,9 @@
 </svelte:head>
 
 <LoadingOverlay />
+
+<ScrollProgress />
+<Cursor />
 
 <a
   href="#main"

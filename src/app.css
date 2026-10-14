@@ -202,6 +202,38 @@ body {
   border-radius: 99px;
 }
 
+/* ---------- Extra "on-brand" motion ---------- */
+@keyframes gridDrift {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 60px 60px;
+  }
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(242, 236, 228, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(242, 236, 228, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridDrift 24s linear infinite;
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* when the custom cursor is active, hide the native one */
+body.custom-cursor-active,
+body.custom-cursor-active a,
+body.custom-cursor-active button {
+  cursor: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -213,6 +245,7 @@ body {
     transition: none !important;
   }
   .animate-marquee,
+  .bg-grid,
   .will-rise > * {
     animation: none !important;
   }

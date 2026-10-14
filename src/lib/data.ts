@@ -124,7 +124,7 @@ export const portfolio: Chapter[] = [
     image: '/assets/img/Porto/Cyber%20Defense%20Kemhan/Test%20Com%20Network.jpg',
     story: [
       'Testing and commissioning of network devices for the Cyber Defence program at Kemhan — validating connectivity, performance and hardening across the deployed infrastructure.',
-      'Ensuring the network is stable, secure and ready to operate in a demanding defence environment.'
+      'Result: a network that is stable, secure and fully ready to operate in a demanding defence environment.'
     ],
     filter: 'infra',
     categoryLabel: 'Infrastructure',
@@ -141,8 +141,8 @@ export const portfolio: Chapter[] = [
     role: 'Security & Communication',
     image: '/assets/img/Porto/SIT%20AL/technical%20meeting%20AL.jpg',
     story: [
-      'Kick-off meeting for the Secure Communication Platform — aligning technical scope, milestones and deliverables with stakeholders before implementation begins.',
-      'A foundation-setting discussion that shapes how the platform is built, secured and rolled out.'
+      'The challenge: align technical scope, milestones and deliverables across stakeholders before a Secure Communication Platform could be built.',
+      'I led the kick-off — framing requirements and success criteria early. Result: a clear, agreed foundation that shaped how the platform was built, secured and rolled out.'
     ],
     filter: 'security',
     categoryLabel: 'Security & Communication',
@@ -160,7 +160,7 @@ export const portfolio: Chapter[] = [
     image: '/assets/img/Porto/Cyber%20Defense%20Kemhan/Pusrehab%20Bintaro.jpg',
     story: [
       'Uji Kelaikan (fitness-for-purpose assessment) for the network infrastructure at Pusrehab Bintaro — verifying that systems meet the required operational standards.',
-      'Delivering a clear assessment so the infrastructure is fit to operate and easy to maintain.'
+      'Result: a clear, documented assessment so the infrastructure is proven fit to operate and easy to maintain.'
     ],
     filter: 'infra',
     categoryLabel: 'Infrastructure',
@@ -177,8 +177,8 @@ export const portfolio: Chapter[] = [
     role: 'Advisory',
     image: '/assets/img/Porto/ICCS%20Ranpur/Iccs%20Presentation.jpg',
     story: [
-      'Presenting the Integrated Combat & Communication System (ICCS) for RANPUR — walking stakeholders through capabilities, integration and the value it brings to the field.',
-      'Turning complex systems into a clear, convincing narrative.'
+      'The challenge: communicate the Integrated Combat & Communication System (ICCS) for RANPUR — a complex system with many moving parts — to non-technical stakeholders.',
+      'I led the presentation, walking stakeholders through capabilities, integration and field value. Result: a clear, convincing narrative that drove alignment and buy-in.'
     ],
     filter: 'advisory',
     categoryLabel: 'Advisory',
@@ -196,7 +196,7 @@ export const portfolio: Chapter[] = [
     image: '/assets/img/Porto/SIT%20AL/Neputunus%20Vid%20Tron.jpg',
     story: [
       'Neptunus Vid-Tron — a video and data presentation platform built for secure, high-impact communication.',
-      'Bridging display, data and network into one cohesive solution.'
+      'Result: display, data and network unified into one cohesive solution that performs when it matters.'
     ],
     filter: 'security',
     categoryLabel: 'Security & Communication',
@@ -213,8 +213,8 @@ export const portfolio: Chapter[] = [
     role: 'Security & Communication',
     image: '/assets/img/Porto/SIT%20AL/SIT%20AL.jpg',
     story: [
-      'Training sessions for the Secure Communication Platform (SCP) — enabling teams to operate the system confidently and securely.',
-      'Knowledge transfer that makes the technology stick.'
+      'The challenge: teams needed to operate the Secure Communication Platform (SCP) confidently and securely, without slowing down delivery.',
+      'I ran hands-on training sessions across the platform. Result: knowledge that stuck — teams operating the system safely and self-sufficiently.'
     ],
     filter: 'security',
     categoryLabel: 'Security & Communication',
@@ -232,7 +232,7 @@ export const portfolio: Chapter[] = [
     image: '/assets/img/Porto/ICCS%20Ranpur/Product%20Knowledge.jpg',
     story: [
       'Product knowledge sessions on Military Radio Communication — deep dives into capabilities, configurations and real-world usage.',
-      'Sharing the detail that turns a product into a solution.'
+      'Result: teams who understand the product well enough to turn it into a working solution, not just a spec sheet.'
     ],
     filter: 'advisory',
     categoryLabel: 'Advisory',
@@ -249,8 +249,8 @@ export const portfolio: Chapter[] = [
     role: 'Infrastructure',
     image: '/assets/img/Porto/STAN%20BINTARO/Presentation%20Network%20STAN%20BINTARO.jpg',
     story: [
-      'Presenting the network design and architecture for STAN Bintaro — translating technical requirements into a clear, buildable plan.',
-      'Designing infrastructure that is reliable, scalable and secure.'
+      'The challenge: turn the network requirements for STAN Bintaro into a plan that stakeholders could approve and build against.',
+      'I presented the design and architecture in plain terms. Result: a clear, buildable plan for infrastructure that is reliable, scalable and secure.'
     ],
     filter: 'infra',
     categoryLabel: 'Infrastructure',
@@ -265,8 +265,8 @@ export const portfolio: Chapter[] = [
     role: 'Security & Communication',
     image: '/assets/img/Porto/SIT%20AL/Video%20Trion%20Kasal.jpg',
     story: [
-      'Implementasi Video-Tron for Kasops Kasal — deploying the video presentation system end to end.',
-      'From planning to on-site delivery, making sure it works when it matters.'
+      'The challenge: deploy a video presentation system for Kasops Kasal end to end, in a live operational setting.',
+      'I led planning through on-site delivery. Result: Video-Tron installed and working when it matters — no surprises on the day.'
     ],
     filter: 'security',
     categoryLabel: 'Security & Communication',
@@ -293,6 +293,60 @@ export const gallery: string[] = [
   '/assets/img/Porto/SIT%20AL/SIT%20AL.jpg',
   '/assets/img/Porto/ICCS%20Ranpur/IMG-20220121-WA0046.jpg',
   '/assets/img/Porto/Cyber%20Defense%20Kemhan/IMG_20211122_161930.jpg'
+];
+
+/** Gallery items with captions — used by the gallery grid + lightbox. */
+export type GalleryItem = { src: string; caption: string };
+
+export const galleryItems: GalleryItem[] = [
+  {
+    src: '/assets/img/Porto/Cyber%20Defense%20Kemhan/Test%20Com%20Network.jpg',
+    caption: 'Network testing & commissioning — Kemhan'
+  },
+  {
+    src: '/assets/img/Porto/SIT%20AL/technical%20meeting%20AL.jpg',
+    caption: 'Technical meeting — Secure Communication Platform'
+  },
+  {
+    src: '/assets/img/Porto/ICCS%20Ranpur/Iccs%20Presentation.jpg',
+    caption: 'ICCS presentation — RANPUR'
+  },
+  {
+    src: '/assets/img/Porto/STAN%20BINTARO/Presentation%20Network%20STAN%20BINTARO.jpg',
+    caption: 'Network design presentation — STAN Bintaro'
+  },
+  {
+    src: '/assets/img/Porto/SIT%20AL/Neputunus%20Vid%20Tron.jpg',
+    caption: 'Neptunus Vid-Tron — SIT AL'
+  },
+  {
+    src: '/assets/img/Porto/Cyber%20Defense%20Kemhan/Pusrehab%20Bintaro.jpg',
+    caption: 'Uji Kelaikan infrastructure — Pusrehab Bintaro'
+  },
+  {
+    src: '/assets/img/Porto/ICCS%20Ranpur/Product%20Knowledge.jpg',
+    caption: 'Product knowledge — Military Radio Communication'
+  },
+  {
+    src: '/assets/img/Porto/SIT%20AL/Video%20Trion%20Kasal.jpg',
+    caption: 'Implementasi Video-Tron — Kasops Kasal'
+  },
+  {
+    src: '/assets/img/Porto/Cyber%20Defense%20Kemhan/IMG_20210107_090841.jpg',
+    caption: 'Cyber Defence deployment — Kemhan'
+  },
+  {
+    src: '/assets/img/Porto/SIT%20AL/SIT%20AL.jpg',
+    caption: 'On-site delivery — SIT AL'
+  },
+  {
+    src: '/assets/img/Porto/ICCS%20Ranpur/IMG-20220121-WA0046.jpg',
+    caption: 'ICCS Ranpur field session'
+  },
+  {
+    src: '/assets/img/Porto/Cyber%20Defense%20Kemhan/IMG_20211122_161930.jpg',
+    caption: 'Infrastructure assessment — Kemhan'
+  }
 ];
 
 /** Filter categories used on the portfolio/chapters section. */

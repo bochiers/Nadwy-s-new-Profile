@@ -1,5 +1,6 @@
 <script lang="ts">
   import { profile } from '$lib/data';
+  import { scramble } from '$lib/actions/scramble';
 </script>
 
 <!-- Fullscreen hero, Goonies-style big display type with a riddle/intro -->
@@ -16,7 +17,7 @@
 
   <div class="relative z-10 flex items-start justify-between text-[11px] uppercase tracking-[0.4em] text-ash">
     <span>{profile.location}</span>
-    <span class="hidden sm:block">{profile.role}</span>
+    <span class="hidden sm:block" use:scramble={{ trigger: 'loop' }}>{profile.role}</span>
   </div>
 
   <div class="relative z-10">
@@ -45,7 +46,7 @@
       </span>
       Scroll to explore
     </a>
-    <span class="text-[11px] uppercase tracking-[0.4em] text-ash">
+    <span class="text-[11px] uppercase tracking-[0.4em] text-ash" use:scramble={{ trigger: 'loop' }}>
       {profile.tagline}
     </span>
   </div>

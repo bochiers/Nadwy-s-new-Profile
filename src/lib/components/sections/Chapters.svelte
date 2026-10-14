@@ -15,7 +15,7 @@
           Chapters
         </p>
         <h2 class="display-lg text-bone" data-reveal use:reveal>
-          Meet the<br /><span class="text-outline">projects</span>
+          Selected<br /><span class="text-outline">work</span>
         </h2>
       </div>
 
